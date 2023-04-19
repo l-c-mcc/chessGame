@@ -1,6 +1,6 @@
 # "Chess Game" -- definitely not final name
 
-This project is intended to be a basis from which I can create chess variant game(s). However, before I can create any chess variants, I must first code chess.
+This project is intended to be a basis from which I can create chess variant game(s). As the first (and current) step, I will be implementing normal chess.
 
 Uses the modules by [pygame](https://www.pygame.org/wiki/about).
 
