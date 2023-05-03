@@ -6,13 +6,17 @@ import pygame
 # Data
 ###############
 
+# holds all sprite sources in the game. is not meant to be modified after initialization.
 SPRITES = dict()
 
-def prepareSprite(spriteFile : str) -> pygame.Surface:
+# takes a file location as an argument and turns it into a surface.
+def prepareSprite(spriteFile : str, doubleSize : bool = True) -> pygame.Surface:
     sprite = pygame.image.load(spriteFile).convert_alpha()
-    sprite = doubleSpriteSize(sprite)
+    if(doubleSize):
+        sprite = doubleSpriteSize(sprite)
     return sprite
 
+# returns a sprite double the size (length and width) as the input.
 def doubleSpriteSize(sprite : pygame.Surface) -> pygame.Surface:
     spriteWidth = sprite.get_width()
     originalSprite = pygame.image.tobytes(sprite, "RGBA")
@@ -31,6 +35,7 @@ def doubleSpriteSize(sprite : pygame.Surface) -> pygame.Surface:
     newSprite += currentRow + currentRow
     return pygame.image.frombytes(bytes(newSprite),(spriteWidth*2,spriteWidth*2),"RGBA")
 
+# initializes sprite dictionary
 def initializeSpriteDict():
     SPRITES["board"] = prepareSprite("../Assets/chessBoards/chessBoard.png")
 
@@ -42,5 +47,5 @@ def initializeSpriteDict():
 Coord2D = tuple[int, int]
 
 ###############
-# helpers
+# Helpers
 ###############
