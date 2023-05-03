@@ -1,5 +1,5 @@
 import pygame
-from universal import Coord2D
+from universal import Coord2D, SPRITES
 
 # this module handles management of the game board
 
