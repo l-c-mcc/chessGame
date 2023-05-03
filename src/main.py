@@ -22,6 +22,7 @@ def main():
         screen.fill("purple")
 
         # RENDER YOUR GAME HERE
+        screen.blit(universal.SPRITES["board"],(0,0))
 
         # flip() the display to put your work on screen
         pygame.display.flip()
