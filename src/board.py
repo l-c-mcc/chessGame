@@ -8,4 +8,3 @@ class Board:
         self.startPos = startPos
         self.sideLength = sideLength
         self.surface = surface
-        self.whitePieces = []
