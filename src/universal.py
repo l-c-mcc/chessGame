@@ -1,4 +1,5 @@
 import pygame
+from enum import Enum
 
 # this file contains all types, data, and helper functions used across the game
 
@@ -57,6 +58,10 @@ def initializeSpriteDict():
 ###############
 
 Coord2D = tuple[int, int]
+
+class Side(Enum):
+    WHITE = 1
+    BLACK = 2
 
 ###############
 # Helpers
