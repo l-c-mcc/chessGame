@@ -38,6 +38,18 @@ def doubleSpriteSize(sprite : pygame.Surface) -> pygame.Surface:
 # initializes sprite dictionary
 def initializeSpriteDict():
     SPRITES["board"] = prepareSprite("../Assets/chessBoards/chessBoard.png")
+    SPRITES["bishopWhite"] = prepareSprite("../Assets/chessPieces/bishopWhite.png")
+    SPRITES["knightWhite"] = prepareSprite("../Assets/chessPieces/knightWhite.png")
+    SPRITES["kingWhite"] = prepareSprite("../Assets/chessPieces/kingWhite.png")
+    SPRITES["pawnWhite"] = prepareSprite("../Assets/chessPieces/pawnWhite.png")
+    SPRITES["queenWhite"] = prepareSprite("../Assets/chessPieces/queenWhite.png")
+    SPRITES["rookWhite"] = prepareSprite("../Assets/chessPieces/rookWhite.png")
+    SPRITES["bishopBlack"] = prepareSprite("../Assets/chessPieces/bishopBlack.png")
+    SPRITES["knightBlack"] = prepareSprite("../Assets/chessPieces/knightBlack.png")
+    SPRITES["kingBlack"] = prepareSprite("../Assets/chessPieces/kingBlack.png")
+    SPRITES["pawnBlack"] = prepareSprite("../Assets/chessPieces/pawnBlack.png")
+    SPRITES["queenBlack"] = prepareSprite("../Assets/chessPieces/queenBlack.png")
+    SPRITES["rookBlack"] = prepareSprite("../Assets/chessPieces/rookBlack.png")
 
 
 ###############
