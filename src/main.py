@@ -23,7 +23,7 @@ def main():
         screen.fill("purple")
 
         # RENDER YOUR GAME HERE
-        screen.blit(gameBoard.surface,gameBoard.startPos)
+        screen.blit(gameBoard.surface,gameBoard.position)
 
         # flip() the display to put your work on screen
         pygame.display.flip()
