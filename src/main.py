@@ -1,4 +1,4 @@
-import pygame, universal
+import pygame, universal, board
 
 # this file handles the actual management of the game
 
@@ -10,6 +10,7 @@ def main():
     clock = pygame.time.Clock()
     running = True
     universal.initializeSpriteDict()
+    gameBoard = board.Board((0,0))
 
     while running:
         # poll for events
@@ -22,7 +23,7 @@ def main():
         screen.fill("purple")
 
         # RENDER YOUR GAME HERE
-        screen.blit(universal.SPRITES["board"],(0,0))
+        screen.blit(gameBoard.surface,gameBoard.startPos)
 
         # flip() the display to put your work on screen
         pygame.display.flip()
